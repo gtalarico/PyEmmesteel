@@ -75,3 +75,9 @@ sudo reboot
 
 Finally, you can use the `home-assistant` custom integration to see the status, power on/off, adjust heating level, etc.
 
+## Troubleshooting
+
+### "Requirements not found: ['websockets==13.1']"
+
+After a HA update, the integration may fail to load with this error because HA bundles its own version of `websockets` and won't install a conflicting pinned version for custom integrations. The fix is to remove `websockets` from the `requirements` list in `manifest.json`, since `pyemmesteel` already depends on it and HA's bundled version is compatible.
+
