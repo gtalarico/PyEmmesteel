@@ -1,6 +1,6 @@
 """ Emmesteel API Controller"""
 
-import asyncio
+# import asyncio
 import websockets
 import logging
 from dataclasses import dataclass, field
@@ -74,14 +74,14 @@ class EmmesteelApi:
             return State()
 
 # TODO - delete
-async def test():
-    PI_PROXY = "192.168.50.100"
-    AP_IP = PI_PROXY
-    controller = EmmesteelApi(AP_IP)
-    CMD = CMD_POWER_UP
-    CMD = CMD_ON_OFF
-    # response = await controller.send_cmd(CMD)
-    response = await controller.get_state()
-    logger.info(f"response={response}")
-
-asyncio.run(test())
+# async def test():
+#     PI_PROXY = "192.168.50.100"
+#     AP_IP = PI_PROXY
+#     controller = EmmesteelApi(AP_IP)
+#     CMD = CMD_POWER_UP
+#     CMD = CMD_ON_OFF
+#     # response = await controller.send_cmd(CMD)
+#     response = await controller.get_state()
+#     logger.info(f"response={response}")
+#
+# asyncio.run(test())

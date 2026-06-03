@@ -3,7 +3,7 @@
     "name": "Emmesteel",
     "version": "0.1.0",
     "documentation": "https://github.com/gtalarico/pyemmesteel",
-    "requirements": ["websockets==13.1", "pyemmesteel==0.0.1"],
+    "requirements": ["pyemmesteel==0.0.2"],
     "dependencies": [],
     "codeowners": ["@gtalarico"],
     "config_flow": true,

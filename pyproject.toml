@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyemmesteel"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
   "websockets>=13.0.0"
 ]
@@ -20,6 +20,12 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
+
+[project.optional-dependencies]
+dev = [
+  "build",
+  "twine",
+]
 
 [project.urls]
 Homepage = "https://github.com/gtalarico/pyemmesteel"
